@@ -1,6 +1,6 @@
 # diabeticsdiag_SVM
 
-import pandas as pd
+import pandas as pd /n
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
