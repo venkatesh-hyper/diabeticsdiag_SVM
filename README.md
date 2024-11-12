@@ -1,10 +1,8 @@
-# diabeticsdiag_SVM
 
-import pandas as pd 
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, classification_report
+# Project Title: Diabetes Prediction Using Support Vector Machine (SVM)
+
+**Abstract:** This project focuses on developing a machine learning model to predict the likelihood of diabetes in individuals based on key medical and demographic features. Using a dataset that includes metrics such as Pregnancies, Glucose, Blood Pressure, Skin Thickness, Insulin, BMI, Diabetes Pedigree Function, and Age, we trained and evaluated a Support Vector Machine (SVM) classifier. SVM was chosen for its effectiveness in high-dimensional spaces and capability to provide robust classification with limited data. The model was optimized through hyperparameter tuning to improve predictive accuracy and reduce potential biases. Results from cross-validation indicate the model's effectiveness in correctly classifying diabetic and non-diabetic cases. This work demonstrates the potential of SVM in predictive healthcare applications and offers insights into the key factors influencing diabetes risk. The project has implications for preventive healthcare, enabling early detection and intervention for at-risk individuals.
+
 
 # testing using 
     # New patient's data (input should be in the same order as the dataset's columns)
@@ -47,14 +45,3 @@ new data =[[ Pregnancies , Glucose , BloodPressure , SkinThickness , Insulin , B
         weighted avg       0.75      0.75      0.75       154
                     Training Accuracy: 82.57%
                     Testing Accuracy: 75.32%
-
-# Decision Tree
-        Decision Tree Training Accuracy: 100.00%
-        Decision Tree Testing Accuracy: 70.45%
-        Classification Report for Decision Tree:
-                      precision    recall  f1-score   support
-                   0       0.81      0.73      0.77       206
-                   1       0.55      0.65      0.59       102
-            accuracy                           0.70       308
-           macro avg       0.68      0.69      0.68       308
-        weighted avg       0.72      0.70      0.71       308
